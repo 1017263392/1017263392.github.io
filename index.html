@@ -52,15 +52,26 @@
 				<img src="assets/img/logo.png" alt="Scoop Themes Logo" style="width: 210px;">
 				<br/>
 				<br/>
-				<h2 class="subtitle">哈尔滨市南岗区第二幼儿园欢迎您报名，
+				<h2 class="subtitle">哈尔滨市南岗区第二幼儿园
+					<br>	
+				欢迎您报名，
 				<br>
-				本系统将于2019年7月11日8点30分正式开启。
+				本系统将于
+				<br>	
+				2019年7月11日8点30分正式开启。
 				<br>
-				网上注册时间为：2019年7月11日8：30-7月13日11:30分。
+				网上注册时间为：
+				<br>	
+				2019年7月11日8：30-7月13日11:30分。
 				<br>
-				报名时间为：2019年7月14日8：30分，
+				报名时间为：
+				<br>	
+
+				2019年7月14日8：30分，
 				<br>
-				额满为止。详细情况请咨询0451— 82521301,0451-87527192。</h2>
+				额满为止。详细情况请咨询
+<br>	
+					0451— 82521301,0451-87527192。</h2>
 				<br/>
 		</div>
 	</div>
@@ -75,7 +86,6 @@ $(document).ready( function () {
 $('#wrapper').height($(document).height());
 // I only have one form on the page but you can be more specific if need be.
 var $form = $('form');
-
 if ( $form.length > 0 ) {
 	$('form input[type="submit"]').bind('click', function ( event ) {
 		if ( event ) event.preventDefault();
@@ -84,14 +94,11 @@ if ( $form.length > 0 ) {
 	});
 }
 });
-
 function appendResult(userText , className, iconClass){
 var resultHTML = "<div class='stretchLeft result "+ className + "'>" + userText + " <span class='fa fa-" + iconClass + "'></span>" + "</div>";
 $('body').append(resultHTML);
 $('.result').delay(10000).fadeOut('1000');
 }
-
-
 function register($form) {
 $.ajax({
 	type: $form.attr('method'),
