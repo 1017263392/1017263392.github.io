@@ -1,9 +1,154 @@
-<html>  
-<body>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>分班查看</title>
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+</head>
+<body>
+<div class="header" style="width: 100%;height: 50px;background: #007bff;font-size: 25px;text-align: center;color: #fff;line-height: 50px;margin-bottom: 20px;">查看分班信息</div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <form role="form" action="" enctype="multipart/form-data" method="post" novalidate id="form">
+                <div class="form-group">
+                    <label for="name"><span style="color: red;">*</span>儿童姓名</label><input type="text" class="form-control" id="name" name="name"  required="required" />
+                    <div class="invalid-feedback"><small>儿童姓名不能为空！</small></div>
+                </div>
+                <div id="table">
+                    
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary btn-lg btn-block" id="search">查询</button>
+                </div>
+                
+                <div style="display: none;">
+                    <div id='王芮恩'>1,王芮恩,王亮,小小</div>
+                    <div id='贾心灏'>2,贾心灏,贾同超,小小</div>
+                    <div id='魏熙桐'>3,魏熙桐,魏新宇,小小</div>
+                    <div id='刘锦然'>4,刘锦然,刘勇,小小</div>
+                    <div id='魏圣林'>5,魏圣林,魏潇,小小</div>
+                    <div id='王雯彤'>6,王雯彤,王显超,小小</div>
+                    <div id='王士衡'>7,王士衡,王磊,小小</div>
+                    <div id='曹浩然'>8,曹浩然,曹士兴,小小</div>
+                    <div id='王禹菡'>9,王禹菡,王宝山,小小</div>
+                    <div id='刘梦栩'>10,刘梦栩,刘泽,小小</div>
+                    <div id='王艺霏'>11,王艺霏,王子时,小小</div>
+                    <div id='王梓硕'>12,王梓硕,王福祥,小小</div>
+                    <div id='王梓墨'>13,王梓墨,王冠,小小</div>
+                    <div id='黄意涵'>14,黄意涵,黄崇文,小小</div>
+                    <div id='王烁棋'>15,王烁棋,王敏,小小</div>
+                    <div id='张开莱'>16,张开莱,张勇,小小</div>
+                    <div id='赵晨阳'>17,赵晨阳,赵伟,小小</div>
+                    <div id='宋森豪'>18,宋森豪,宋冬冬,小小</div>
+                    <div id='单浩博'>19,单浩博,单继鹏,小小</div>
+                    <div id='崔云轩'>20,崔云轩,崔莹,小小</div>
+                    <div id='马悠然'>21,马悠然,马克强,小小</div>
+                    <div id='孙莫策'>22,孙莫策,孙雨泽,小小</div>
+                    <div id='高晟宸'>23,高晟宸,高磊,小小</div>
+                    <div id='郭雨童'>24,郭雨童,郭旭,小小</div>
+					<div id='李鸿卓'>24,李鸿卓,李也,小小</div>
+                    <div id='孟优璇'>25,孟优璇,孟宪然,小小</div>
+                    <div id='程海铭'>26,程海铭,程森,小小</div>
+                    <div id='侯一博'>27,侯一博,侯利军,小三</div>
+                    <div id='程瑞惜'>28,程瑞惜,程继东,小三</div>
+                    <div id='周晋锋'>29,周晋锋,周思成,小三</div>
+                    <div id='王金儒'>30,王金儒,王洪崧,小三</div>
+                    <div id='王忆慈'>31,王忆慈,王文松,小三</div>
+                    <div id='金经卓'>32,金经卓,金鑫,小三</div>
+                    <div id='赵梓懿'>33,赵梓懿,赵阳,小三</div>
+                    <div id='褚梓希'>34,褚梓希,褚志男,小三</div>
+                    <div id='尹鹤龙'>35,尹鹤龙,尹绍宇,小三</div>
+                    <div id='常德'>36,常德,常卓,小三</div>
+                    <div id='杨竟然'>37,杨竟然,杨熙,小三</div>
+                    <div id='祁骥'>38,祁骥,祁小乐,小三</div>
+                    <div id='戚好'>39,戚好,戚亭,小三</div>
+                    <div id='杨程'>40,杨程,杨吉强,小三</div>
+                    <div id='宋欣澄'>41,宋欣澄,宋宇,小三</div>
+                    <div id='吴悦畅'>42,吴悦畅,吴洪威,小三</div>
+                    <div id='王梓涵'>43,王梓涵,王永哲,小三</div>
+                    <div id='李明泽'>44,李明泽,李荣刚,小三</div>
+                    <div id='顾津慈'>45,顾津慈,顾岩,小三</div>
+                    <div id='施禹竹'>46,施禹竹,施超,小三</div>
+                    <div id='刘瑞恬'>47,刘瑞恬,刘嘉权,小三</div>
+                    <div id='杨洛涵'>48,杨洛涵,杨欧,小三</div>
+                    <div id='张语哲'>49,张语哲,张伟,小四</div>
+                    <div id='李名朔'>50,李名朔,李宏达,小三</div>
+                    <div id='邹译轩'>51,邹译轩,邹立丰,小四</div>
+                    <div id='车佳玥'>52,车佳玥,车亚洲,小四</div>
+                    <div id='陈正一'>53,陈正一,陈松,小三</div>
+                    <div id='刘俊希'>54,刘俊希,刘晓龙,小三</div>
+                    <div id='王琬乔'>55,王琬乔,王新峰,小三</div>
+                    <div id='计嘉泽'>56,计嘉泽,计博,小小</div>
+                    <div id='赵纹萱'>57,赵纹萱,赵睿,小三</div>
+                    <div id='刘柏燊'>58,刘柏燊,刘洋,小三</div>
+                    <div id='郭美怡'>59,郭美怡,郭立群,小三</div>
+                    <div id='王小格'>60,王小格,王耘,小三</div>
+                    <div id='李清芷'>61,李清芷,李喜民,小三</div>
+                    <div id='王禹深'>62,王禹深,王振昊,小三</div>
+                    <div id='范云嘉'>63,范云嘉,范军,小四</div>
+                    <div id='栾佳璐'>64,栾佳璐,栾钧,小四</div>
+                    <div id='闻思理'>65,闻思理,闻祥明,小四</div>
+                    <div id='王浠维'>66,王浠维,王鹏,小三</div>
+                    <div id='鲁俊博'>67,鲁俊博,鲁磊,小四</div>
+                    <div id='邓家俊'>68,邓家俊,邓钺,小四</div>
+                    <div id='于沐辰'>69,于沐辰,于海龙,小四</div>
+                    <div id='胡严泽'>70,胡严泽,胡兴华,小四</div>
+                    <div id='贾鏻'>71,贾鏻,贾宝阳,小四</div>
+                    <div id='贾敬尧'>72,贾敬尧,贾槟源,小四</div>
+                    <div id='郭奕含'>73,郭奕含,郭明瑞,小四</div>
+                    <div id='刘恩硕'>74,刘恩硕,刘世海,小四</div>
+                    <div id='王雨潼'>75,王雨潼,王绩明,小四</div>
+                    <div id='刘木缘'>76,刘木缘,刘云昌,小四</div>
+                    <div id='霍楚予'>77,霍楚予,霍佳凝,小四</div>
+                    <div id='潘佳辰'>78,潘佳辰,潘宏,小四</div>
+                    <div id='王子游'>79,王子游,王昊,小三</div>
+					<div id='王一'>79,王一,,小三</div>
+                    <div id='邓家美'>80,邓家美,邓钺,小四</div>
+                    <div id='李博瀚'>81,李博瀚,李长纯,小四</div>
+                    <div id='刘轩希'>82,刘轩希,刘春生,小四</div>
+                    <div id='钱柏宇'>83,钱柏宇,钱宏博,小四</div>
+                    <div id='韩沐妍'>84,韩沐妍,韩川,小一</div>
+                    <div id='曹语桐'>85,曹语桐,曹越博,小四</div>
+                    <div id='孙若荧'>86,孙若荧,孙景锁,小四</div>
+                    <div id='魏熙皓'>87,魏熙皓,魏宁,小四</div>
+                    <div id='王瑾煊'>88,王瑾煊,王雨,小四</div>
+                    <div id='孙思儒'>89,孙思儒,孙喆,小四</div>
+                    <div id='黄译墨'>90,黄译墨,黄荣鑫,小四</div>
+                    <div id='陈贺馨'>91,陈贺馨,陈鹏,小四</div>
+                    <div id='张沐川'>92,张沐川,张德强,小四</div>
+                    <div id='郝天淇'>93,郝天淇,郝钢,小四</div>
+                    <div id='蒋依桐'>94,蒋依桐,蒋毅,小四</div>
+                    <div id='管艺馨'>95,管艺馨,管聪毅,小四</div>
+                    <div id='程柔嘉'>96,程柔嘉,程滨,小四</div>
+                    <div id='马沐杍'>97,马沐杍,马臣超,小四</div>
+                    <div id='徐铄淇'>98,徐铄淇,徐超,小一</div>
+					<div id='齐宸依'>98,齐宸依,,小一</div>
+					<div id='李响'>98,李响,,小二</div>
+                    <div id='林嘉惠'>99,林嘉惠,林钢,空</div>
 
-<!--<div><h2>欢迎您报名哈尔滨市南岗区第二幼儿园，本次报名已结束。本次报名预计招收人数90人，实际录取人数100人。达到原计划招收人数的1.1倍。请序号为1-50的儿童家长7月15日携带相关资料现场确认。请序号为51-100的儿童家长7月16日携带相关资料，现场确认。报名成功名单如下：</h2></div>
-<img src="img2.png" width="100%"/>  
-<div><h2>详细信息请咨询：0451-82521301.
-0451-87527192.</h2></div>  -->
-</body>  
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- 包括所有已编译的插件 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(function(){
+        $("#search").click(function() {
+            var name = $("#name").val();
+            var s = document.getElementById(name).innerHTML.split(",");
+            var res = "<table class='table' ><tr><th>序号</th><th>姓名</th><th>父亲姓名</th><th>班级</th></tr><tr>";
+            for (var i = 0; i < s.length; i++) {
+                res += "<td>"+s[i]+"</td>";
+            }
+            res+="</tr></table>";
+            document.getElementById("table").innerHTML = res;
+        });
+    })
+</script>
+</body>
+
 </html>

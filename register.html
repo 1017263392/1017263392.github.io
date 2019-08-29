@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Bootstrap 模板</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- 引入 Bootstrap -->
+      <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ 
+      <!-- HTML5 Shiv 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+      <!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+      <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+         <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+   </head>
+   <body>
+         
+         <div class="header" style="width: 100%;height: 50px;background: #007bff;font-size: 25px;text-align: center;color: #fff;line-height: 50px;margin-bottom: 20px;">用户注册</div>
+         <div class="container">
+            
+
+
+            <div class="row clearfix">
+               <div class="col-md-12 column">
+                  <form role="form">
+                     <div class="form-group">
+                         <label for="name">儿童姓名</label><input type="text" class="form-control" id="name" name="name" />
+                     </div>
+                     <div class="form-group">
+                         <label for="password">密码</label><input type="password" class="form-control" id="password" name="password" />
+                     </div>
+                     <div class="form-group">
+                         <label for="repassword">确认密码</label><input type="password" class="form-control" id="repassword" name="repassword" />
+                     </div>
+                     <div class="form-group">
+                         <label for="password">民族</label>
+                         <select name="nation" class="form-control">  
+                            <option value="1">汉族</option>  
+                            <option value="2">蒙古族</option>  
+                            <option value="3">回族</option>  
+                            <option value="4">藏族</option>  
+                            <option value="5">维吾尔族</option>  
+                            <option value="6">苗族</option>  
+                            <option value="7">彝族</option>  
+                            <option value="8">壮族</option>  
+                            <option value="9">布依族</option>  
+                            <option value="10">朝鲜族</option>  
+                            <option value="11">满族</option>  
+                            <option value="12">侗族</option>  
+                            <option value="13">瑶族</option>  
+                            <option value="14">白族</option>  
+                            <option value="15">土家族</option>  
+                            <option value="16">哈尼族</option>  
+                            <option value="17">哈萨克族</option>  
+                            <option value="18">傣族</option>  
+                            <option value="19">黎族</option>  
+                            <option value="20">傈僳族</option>  
+                            <option value="21">佤族</option>  
+                            <option value="22">畲族</option>  
+                            <option value="23">高山族</option>  
+                            <option value="24">拉祜族</option>  
+                            <option value="25">水族</option>  
+                            <option value="26">东乡族</option>  
+                            <option value="27">纳西族</option>  
+                            <option value="28">景颇族</option>  
+                            <option value="29">柯尔克孜族</option>  
+                            <option value="30">土族</option>  
+                            <option value="31">达斡尔族</option>  
+                            <option value="32">仫佬族</option>  
+                            <option value="33">羌族</option>  
+                            <option value="34">布朗族</option>  
+                            <option value="35">撒拉族</option>  
+                            <option value="36">毛南族</option>  
+                            <option value="37">仡佬族</option>  
+                            <option value="38">锡伯族</option>  
+                            <option value="39">阿昌族</option>  
+                            <option value="40">普米族</option>  
+                            <option value="41">塔吉克族</option>  
+                            <option value="42">怒族</option>  
+                            <option value="43">乌孜别克族</option>  
+                            <option value="44">俄罗斯族</option>  
+                            <option value="45">鄂温克族</option>  
+                            <option value="46">德昂族</option>  
+                            <option value="47">保安族</option>  
+                            <option value="48">裕固族</option>  
+                            <option value="49">京族</option>  
+                            <option value="50">塔塔尔族</option>  
+                            <option value="51">独龙族</option>  
+                            <option value="52">鄂伦春族</option>  
+                            <option value="53">赫哲族</option>  
+                            <option value="54">门巴族</option>  
+                            <option value="55">珞巴族</option>  
+                            <option value="56">基诺族</option>  
+                           </select>  
+                     </div>
+                     <div class="form-group">
+                         <label for="cardNum">身份证号码</label><input type="text" class="form-control" id="cardNum" name="cardNum" />
+                     </div>
+                     <div class="form-group">
+                         <label for="cardZPic">身份证正面照</label><input type="text" class="form-control" id="cardZPic" name="cardZPic" />
+                     </div>
+                     <div class="form-group">
+                         <label for="cardFPic">身份证反面照</label><input type="file" class="form-control" id="cardFPic" name="cardFPic"/>
+                     </div>
+                     
+                     <div class="form-group">
+                         <label for="address">户口所在地地址</label><input type="text" class="form-control" id="address" name="address"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="hksyPic">户口首页照片</label><input type="file" class="form-control" id="hksyPic" name="hksyPic"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="hkhzPic">户口户主页照片</label><input type="file" class="form-control" id="hkhzPic" name="hkhzPic"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="hketbryPic">户口儿童本人页照片</label><input type="file" class="form-control" id="hketbryPic" name="hketbryPic"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="etyfjzz">儿童预防接种证</label><input type="text" class="form-control" id="etyfjzz" name="etyfjzz"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="fczPic">房产证照片</label><input type="text" class="form-control" id="fczPic" name="fczPic"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="jzbs">家族病史</label><input type="text" class="form-control" id="jzbs" name="jzbs"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="etbs">儿童身体状况</label><input type="text" class="form-control" id="etbs" name="etbs"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="fName">父亲姓名</label><input type="text" class="form-control" id="fName" name="fName"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="mName">母亲姓名</label><input type="text" class="form-control" id="mName" name="mName"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="fAge">父亲年龄</label><input type="num" class="form-control" id="fAge" name="fAge"/>
+                     </div>
+                  
+                     <div class="form-group">
+                         <label for="mAge">母亲年龄</label><input type="num" class="form-control" id="mAge" name="mAge"/>
+                     </div>
+            
+                     <div class="form-group">
+                         <label for="mAge">婚姻情况</label><input type="num" class="form-control" id="mAge" name="mAge"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="hyqk">婚姻情况</label><input type="text" class="form-control" id="hyqk" name="hyqk"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="tel">联系方式</label><input type="text" class="form-control" id="tel" name="tel"/>
+                     </div>
+
+                     <div class="form-group">
+                         <label for="etyfjzz">儿童预防接种证</label><input type="text" class="form-control" id="etyfjzz" name="etyfjzz"/>
+                     </div>
+
+
+                     <!-- <div class="checkbox">
+                         <label><input type="checkbox" />Check me out</label>
+                     </div> 
+                      -->
+                     <div class="form-group">
+                         <button type="submit" class="btn btn-primary btn-lg btn-block">注册</button>
+                     </div>
+                     
+                  </form>
+               </div>
+            </div>
+         </div>
+
+
+
+      <script src="https://code.jquery.com/jquery.js"></script>
+      <!-- 包括所有已编译的插件 -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+   </body>
+</html>
